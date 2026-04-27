@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeapWord 服务使用协议</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: #F2F2F7; color: #1C1C1E; line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 40px 20px 80px; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .header .logo {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #007AFF, #5856D6);
+      border-radius: 16px; display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; font-size: 28px; color: white; font-weight: 700;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+    .header .meta { font-size: 13px; color: #8E8E93; }
+    .card {
+      background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .card h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .card h2 .num {
+      background: #007AFF; color: white; border-radius: 50%; width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0;
+    }
+    .card h3 { font-size: 15px; font-weight: 600; margin: 16px 0 8px; color: #1C1C1E; }
+    .card p, .card li { font-size: 15px; color: #3C3C43; margin-bottom: 8px; }
+    .card ul { padding-left: 20px; margin: 8px 0; }
+    .card li { margin-bottom: 6px; }
+    .highlight {
+      background: #F0F9FF; border-left: 4px solid #007AFF; border-radius: 0 10px 10px 0;
+      padding: 14px 18px; font-size: 14px; color: #007AFF; margin: 12px 0;
+    }
+    .highlight-orange {
+      background: #FFF7F0; border-left: 4px solid #FF9500; border-radius: 0 10px 10px 0;
+      padding: 14px 18px; font-size: 14px; color: #C53D00; margin: 12px 0;
+    }
+    .highlight-red {
+      background: #FFF0F0; border-left: 4px solid #FF3B30; border-radius: 0 10px 10px 0;
+      padding: 14px 18px; font-size: 14px; color: #C53030; margin: 12px 0;
+    }
+    .footer { text-align: center; padding: 32px 0; font-size: 13px; color: #8E8E93; }
+    .divider { height: 1px; background: #E5E5EA; margin: 20px 0; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-left: 8px; }
+    .tag-red { background: #FFE5E5; color: #FF3B30; }
+    .tag-orange { background: #FFF0E0; color: #FF9500; }
+    .tag-blue { background: #E5F2FF; color: #007AFF; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #000; color: #F5F5F7; }
+      .card { background: #1C1C1E; }
+      .card h2, .card h3 { color: #F5F5F7; }
+      .card p, .card li { color: #AEAEB2; }
+      .highlight { background: #001A33; color: #4DA6FF; }
+      .highlight-orange { background: #1A0E00; color: #FFB84D; }
+      .highlight-red { background: #1A0000; color: #FF8080; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="logo">L</div>
+    <h1>服务使用协议</h1>
+    <p class="meta">LeapWord · 生效日期：2026年4月27日 &nbsp;|&nbsp; 版本：v1.0.3</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">1</span>服务说明</h2>
+    <p><strong>LeapWord</strong>（以下简称"本App"）是一款面向英语学习者的单词记忆工具，通过抛物线卡片交互和七星分级记忆法，帮助用户高效记忆英语单词。</p>
+    <p>本App提供以下核心功能：</p>
+    <ul>
+      <li>📖 离线词库浏览（支持多版本词库）</li>
+      <li>🎴 卡片式单词学习（支持上滑、下滑、左右滑等多种交互）</li>
+      <li>⭐ 七星分级记忆体系（已牢记 / 再巩固 / 很生疏）</li>
+      <li>📊 学习进度统计与可视化</li>
+      <li>🔊 离线 TTS 发音（无需网络）</li>
+    </ul>
+    <div class="highlight">
+      本App所有核心功能均可在<strong>完全离线</strong>的环境下使用，无需互联网连接。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2</span>账号与订阅</h2>
+    <p>本App当前版本<strong>无需注册账号</strong>即可使用全部功能。所有数据均存储在您的设备本地。</p>
+    <div class="divider"></div>
+    <h3>内购与订阅（如适用）</h3>
+    <p>如本App未来提供付费内容或订阅服务，将通过 Apple App Store 进行。相关规则如下：</p>
+    <ul>
+      <li>所有付费交易由 Apple 的 StoreKit 系统处理，我们<b>不收集、不存储</b>您的支付信息</li>
+      <li>订阅的计费、续费、退款等事宜遵循 Apple 的相关政策</li>
+      <li>订阅服务仅在您主动购买后生效，不会在未经您确认的情况下自动扣费</li>
+      <li>您可随时在 iOS 设置中管理或取消订阅</li>
+    </ul>
+    <div class="highlight-orange">
+      如因 Apple 系统问题导致订阅异常，请优先联系 Apple 客服；如确认是 App 自身问题，我们将协助您解决。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">3</span>使用规范</h2>
+    <p>用户在使用本App时，应遵守以下规范：</p>
+    <ul>
+      <li>✅ 仅将本App用于个人英语学习目的</li>
+      <li>✅ 不得利用本App从事任何违法违规活动</li>
+      <li>✅ 不得对词库数据进行反向工程、提取或再传播</li>
+      <li>✅ 尊重知识产权，不得将本App内容用于商业用途</li>
+      <li>✅ 不得利用本App侵犯他人合法权益</li>
+    </ul>
+    <div class="highlight-red">
+      <strong>禁止行为：</strong>
+      <ul style="margin-top:8px;">
+        <li>❌ 利用本App传播违法违规内容</li>
+        <li>❌ 试图破解、篡改或绕过App内购机制</li>
+        <li>❌ 以自动化方式批量访问、抓取词库数据</li>
+        <li>❌ 对本App进行反编译、反汇编或创建衍生作品</li>
+        <li>❌ 干扰或破坏App的正常运行</li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+    <p><strong>违规处理：</strong>如您违反上述规范，我们有权在不事先通知的情况下，限制或终止您使用本App的部分或全部功能。对于情节严重的，我们保留追究法律责任的权利。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">4</span>知识产权</h2>
+    <p>本App的界面设计、代码逻辑、图标资源、动画效果、交互设计等知识产权归开发者所有。未经书面许可，您不得复制、修改、传播或用于商业用途。</p>
+    <div class="divider"></div>
+    <h3>词库数据</h3>
+    <p>本App内置词库数据基于以下开放词库：</p>
+    <ul>
+      <li><strong>ECDICT</strong>（MIT License）：英汉双向词典数据</li>
+    </ul>
+    <p>ECDICT 词库遵循 MIT License，允许自由使用、复制、修改和分发。本App对词库数据进行了适配和整理。</p>
+    <div class="divider"></div>
+    <h3>用户生成内容</h3>
+    <p>您在本App中创建的学习记录、生词本等内容归您所有。您授予我们在本地设备范围内处理这些内容的必要权限，以便向您提供学习服务。</p>
+    <div class="divider"></div>
+    <h3>商标声明</h3>
+    <p><strong>LeapWord</strong> 及相关标识为开发者商标，受到法律保护。未经授权，任何人不得擅自使用。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">5</span>免责声明</h2>
+    <div class="highlight-red">
+      <strong>重要提示：</strong>本App由个人开发者独立开发，目前处于持续优化阶段，可能存在功能缺陷或体验不完善之处。我们已尽最大努力确保App稳定运行，但无法完全避免所有问题。如您在使用过程中遇到Bug或异常情况，欢迎通过App内反馈渠道联系我们，我们将尽快修复。
+    </div>
+    <ul>
+      <li>⚠️ 本App提供的词库释义仅供参考，不保证100%准确，建议用户以权威词典为准</li>
+      <li>⚠️ 开发者不对因使用本App而产生的任何直接或间接损失承担责任</li>
+      <li>⚠️ 因不可抗力（包括但不限于系统维护、网络故障、政策变更、自然灾害）导致的App服务中断，开发者不承担责任</li>
+      <li>⚠️ 用户因违反本协议造成的任何后果，由用户自行承担</li>
+      <li>⚠️ 本App为纯离线应用，数据仅存储在设备本地，请定期导出或备份重要学习记录，开发者不对数据丢失承担责任</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">6</span>数据与隐私</h2>
+    <p>用户数据的收集、存储、使用和保护遵循本App的《隐私政策》。使用本App即表示您同意我们的数据处理方式。</p>
+    <p>重要说明：</p>
+    <ul>
+      <li>📱 本App为纯离线应用，数据仅存储在您的设备本地</li>
+      <li>📱 卸载App后，所有本地数据由iOS系统自动清除</li>
+      <li>📱 本App不启用iCloud数据同步功能</li>
+      <li>📱 我们不会将您的数据用于任何超出提供服务之外的目的</li>
+    </ul>
+    <div class="highlight">
+      详细的隐私保护说明请参阅：<a href="privacy.html" style="color:#007AFF;">《LeapWord 隐私政策》</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">7</span>服务变更与终止</h2>
+    <p>开发者保留以下权利：</p>
+    <ul>
+      <li>📌 根据产品发展需要，对App功能进行调整、更新或下线</li>
+      <li>📌 在法律法规要求时，对本协议进行修改</li>
+      <li>📌 因安全原因，临时暂停App的部分功能</li>
+    </ul>
+    <div class="highlight-orange">
+      协议修改后，用户继续使用本App即视为接受修改后的协议。如不接受，您有权停止使用并卸载App。重大变更将通过App更新说明或内公告告知。
+    </div>
+    <div class="divider"></div>
+    <p><strong>协议终止后的数据处理：</strong>您卸载App或停止使用服务后，所有本地数据将按照 iOS 系统机制自动清除。我们不会保留任何您的个人信息。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">8</span>未成年人保护</h2>
+    <p>本App不面向未满 14 周岁的儿童提供服务。如您为未成年人，请在监护人指导下使用本App。</p>
+    <p>详细的儿童隐私保护说明请参阅：<a href="children.html" style="color:#007AFF;">《儿童隐私保护说明》</a></p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">9</span>争议解决</h2>
+    <p>本协议的订立、执行和解释均适用中华人民共和国法律。</p>
+    <p>因本协议引起的或与本协议有关的任何争议，双方应首先通过友好协商解决；协商不成的，任何一方可向<strong>被告住所地人民法院</strong>提起诉讼。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">10</span>联系我们</h2>
+    <p>如您对本协议有任何疑问，欢迎通过以下方式联系我们：</p>
+    <ul>
+      <li>📧 <strong>邮箱</strong>：515621051@qq.com</li>
+      <li>📱 <strong>App内</strong>：设置页面 → 关于 → 联系反馈</li>
+    </ul>
+    <p>我们将在收到您的请求后 <strong>15个工作日</strong> 内给予答复。</p>
+  </div>
+
+  <div class="footer">
+    <p>LeapWord · 服务使用协议 · 2026</p>
+    <p>如本协议与当地法律有冲突，以当地法律为准。</p>
+  </div>
+
+</div>
+</body>
+</html>
