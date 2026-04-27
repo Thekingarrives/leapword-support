@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeapWord 技术支持</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      background: #F2F2F7;
+      color: #1C1C1E;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 40px 20px 80px; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .header .logo {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #007AFF, #5856D6);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 28px; color: white; font-weight: 700;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+    .header .meta { font-size: 14px; color: #8E8E93; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card h2 .icon { font-size: 20px; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item:last-child { margin-bottom: 0; }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1C1C1E;
+      margin-bottom: 6px;
+    }
+    .faq-a {
+      font-size: 15px;
+      color: #3C3C43;
+    }
+    .contact-list { list-style: none; }
+    .contact-list li {
+      font-size: 15px;
+      color: #3C3C43;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-list a {
+      color: #007AFF;
+      text-decoration: none;
+    }
+    .version-info {
+      text-align: center;
+      padding: 32px 0;
+      font-size: 13px;
+      color: #8E8E93;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #000; color: #F5F5F7; }
+      .card { background: #1C1C1E; }
+      .card h2 { color: #F5F5F7; }
+      .faq-q { color: #F5F5F7; }
+      .faq-a { color: #AEAEB2; }
+      .contact-list li { color: #AEAEB2; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="logo">L</div>
+    <h1>LeapWord 技术支持</h1>
+    <p class="meta">欢迎使用 LeapWord！如有问题或建议，欢迎联系我们。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">💬</span>常见问题</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：LeapWord 需要联网吗？</div>
+      <div class="faq-a">A：不需要。LeapWord 是一款纯离线应用，所有核心功能（词库浏览、卡片学习、发音播放）均无需网络连接。仅在您主动保存图片到相册时需要系统权限。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：如何切换词库？</div>
+      <div class="faq-a">A：进入"我的"页面，点击"词库下载"，选择您需要的词库（四六级、考研、雅思等）即可切换。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：学习数据会丢失吗？</div>
+      <div class="faq-a">A：所有数据仅存储在您的设备本地。如需备份，请定期导出学习记录。卸载 App 后数据将被清除。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：如何清除所有数据？</div>
+      <div class="faq-a">A：进入"设置 → 数据管理 → 一键归零"即可清除所有学习记录。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：发音无法播放怎么办？</div>
+      <div class="faq-a">A：请检查设备是否静音，并确保系统音量已打开。如仍有问题，尝试重启 App 或设备。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📧</span>联系我们</h2>
+    <ul class="contact-list">
+      <li>📮 <strong>邮箱：</strong><a href="mailto:515621051@qq.com">515621051@qq.com</a></li>
+      <li>📱 <strong>App 内反馈：</strong>设置 → 关于 → 联系反馈</li>
+    </ul>
+  </div>
+
+  <div class="version-info">
+    <p>当前版本：1.0.3</p>
+    <p>最后更新：2026年4月26日</p>
+    <p style="margin-top: 8px;">LeapWord · 让单词在指尖跳跃</p>
+  </div>
+
+</div>
+</body>
+</html>
