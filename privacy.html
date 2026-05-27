@@ -7,108 +7,169 @@
   <title>LeapWord 隐私政策</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif; background: #F2F2F7; color: #1C1C1E; line-height: 1.8; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: #F2F2F7;
+      color: #1C1C1E;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
     .container { max-width: 680px; margin: 0 auto; padding: 40px 20px 80px; }
     .header { text-align: center; margin-bottom: 40px; }
-    .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
-    .header .subtitle { font-size: 14px; color: #8E8E93; }
+    .header .logo { width: 64px; height: 64px; background: linear-gradient(135deg, #007AFF, #5856D6); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 28px; color: white; font-weight: 700; }
+    .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+    .header .meta { font-size: 13px; color: #8E8E93; }
     .card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-    .card h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
-    .card p, .card li { font-size: 15px; color: #3C3C43; }
+    .card h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .card h2 .num { background: #007AFF; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+    .card p, .card li { font-size: 15px; color: #3C3C43; margin-bottom: 8px; }
     .card ul { padding-left: 20px; margin: 8px 0; }
-    .card li { margin-bottom: 8px; }
-    .highlight { background: #F0F9FF; border-left: 4px solid #007AFF; padding: 12px 16px; font-size: 14px; color: #007AFF; margin: 12px 0; }
+    .card li { margin-bottom: 6px; }
+    .highlight { background: #F0F9FF; border-left: 4px solid #007AFF; border-radius: 0 10px 10px 0; padding: 14px 18px; font-size: 14px; color: #007AFF; margin: 12px 0; }
+    .highlight-green { background: #F0FDF4; border-left: 4px solid #34C759; border-radius: 0 10px 10px 0; padding: 14px 18px; font-size: 14px; color: #1C7C2C; margin: 12px 0; }
+    .highlight-orange { background: #FFF7F0; border-left: 4px solid #FF9500; border-radius: 0 10px 10px 0; padding: 14px 18px; font-size: 14px; color: #C53D00; margin: 12px 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #E5E5EA; }
+    th { background: #F9F9FB; font-weight: 600; color: #1C1C1E; }
+    td { color: #3C3C43; }
     .footer { text-align: center; padding: 32px 0; font-size: 13px; color: #8E8E93; }
-    @media (prefers-color-scheme: dark) { body { background: #000; color: #F5F5F7; } .card { background: #1C1C1E; } .card p, .card li { color: #AEAEB2; } .highlight { background: #001A33; color: #4DA6FF; } }
+    .footer a { color: #007AFF; text-decoration: none; }
+    .divider { height: 1px; background: #E5E5EA; margin: 20px 0; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-left: 8px; }
+    .tag-blue { background: #E5F2FF; color: #007AFF; }
+    .tag-red { background: #FFE5E5; color: #FF3B30; }
+    .tag-green { background: #E5F9EB; color: #34C759; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #000; color: #F5F5F7; }
+      .card { background: #1C1C1E; }
+      .card h2 { color: #F5F5F7; }
+      .card p, .card li { color: #AEAEB2; }
+      th { background: #2C2C2E; color: #F5F5F7; }
+      td { color: #AEAEB2; }
+      th, td { border-bottom-color: #38383A; }
+      .highlight { background: #001A33; color: #4DA6FF; }
+      .highlight-green { background: #001A0A; color: #6AE87A; }
+      .highlight-orange { background: #1A0E00; color: #FFB84D; }
+      .table-wrap { background: #1C1C1E; border-radius: 12px; }
+    }
   </style>
 </head>
 <body>
 <div class="container">
 
-<div class="header">
-  <h1>隐私政策</h1>
-  <p class="subtitle">LeapWord · 最后更新：2026 年 5 月 27 日</p>
-</div>
+  <div class="header">
+    <div class="logo">L</div>
+    <h1>LeapWord 隐私政策</h1>
+    <p class="meta">生效日期：2026年5月27日 &nbsp;|&nbsp; 版本：v1.0.4</p>
+  </div>
 
-<div class="card">
-  <h2>1. 我们收集的信息</h2>
-  <p>本 App 高度重视用户隐私。根据您使用功能的不同，我们可能收集以下信息：</p>
-  <ul>
-    <li><strong>学习进度数据：</strong>包括单词掌握状态、学习时长、连续天数等。</li>
-    <li><strong>账号信息：</strong>如您选择注册账号，我们仅会收到 Apple 提供的唯一标识符（不包含密码或手机号），用于识别您的身份。</li>
-    <li><strong>使用设置：</strong>包括每日目标、音效偏好等个人化设置。</li>
-    <li><strong>付费信息：</strong>付款通过 Apple 安全处理，我们不会获取您的银行卡号或付款详情。</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">1</span>概述</h2>
+    <p>LeapWord（以下简称"本App"）高度重视用户隐私。我们承诺遵循中华人民共和国《个人信息保护法》（PIPL）、《数据安全法》及《网络安全法》的相关要求，为用户提供安全、可信赖的服务。</p>
+    <div class="highlight">
+      <strong>一句话总结：</strong>本App仅收集 Apple 登录所需的最小标识信息。学习数据可选择云端同步（Supabase），也可仅存本地。不追踪、不投放广告。
+    </div>
+    <p>本隐私政策说明了当您使用 LeapWord 时，我们如何收集、使用、存储和保护您的信息。</p>
+  </div>
 
-<div class="card">
-  <h2>2. 信息存储与传输</h2>
-  <p>学习数据的存储方式取决于您的使用方式：</p>
-  <ul>
-    <li><strong>未登录用户：</strong>所有数据仅存储在您的设备本地，不会上传到任何服务器。</li>
-    <li><strong>已登录用户：</strong>学习数据会同步到我们的云端服务器（Supabase），用于多设备数据恢复。</li>
-    <li><strong>备份文件：</strong>手动导出的备份文件保存在您自己的设备上，App 不会接触这些文件。</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">2</span>个人信息处理者信息</h2>
+    <p>根据《个人信息保护法》要求，我们向您披露以下信息：</p>
+    <ul>
+      <li><strong>处理者名称</strong>：LeapWord 开发者（个人开发者）</li>
+      <li><strong>联系方式</strong>：515621051@qq.com</li>
+      <li><strong>处理目的</strong>：提供单词学习服务、账号登录、数据同步</li>
+      <li><strong>处理方式</strong>：Apple 登录获取标识符 + 本地 SwiftData 存储 + 可选 Supabase 云端同步</li>
+    </ul>
+  </div>
 
-<div class="card">
-  <h2>3. 信息使用目的</h2>
-  <ul>
-    <li>提供账号登录与数据同步服务</li>
-    <li>展示个人学习进度和统计数据</li>
-    <li>优化和改善学习体验</li>
-    <li>处理会员购买与订阅管理</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">3</span>我们收集的信息</h2>
+    <p><strong>我们仅收集 Apple 登录所需的唯一标识符。</strong>具体说明如下：</p>
+    <ul>
+      <li>❌ 不收集姓名、手机号、邮箱、身份证等身份信息</li>
+      <li>❌ 不追踪您的浏览记录、使用行为或位置信息</li>
+      <li>❌ 不使用任何第三方统计或分析 SDK</li>
+      <li>❌ 不接入任何广告平台</li>
+      <li>❌ 不收集设备标识符（IDFA 等）</li>
+    </ul>
+    <div class="divider"></div>
+    <p><strong>我们处理以下学习相关数据：</strong></p>
+    <ul>
+      <li>✅ <strong>Apple ID 标识符</strong>：用于识别账号身份（仅登录用户）</li>
+      <li>✅ <strong>学习进度数据</strong>：单词掌握状态、每日学习词数、学习时长等</li>
+      <li>✅ <strong>使用设置</strong>：音效偏好、每日目标等个人化设置</li>
+    </ul>
+    <div class="highlight-orange">
+      <strong>📸 相册权限说明：</strong>您主动点击"保存图片"时才会调用。不会后台访问您的相册。
+    </div>
+  </div>
 
-<div class="card">
-  <h2>4. 信息共享</h2>
-  <p>我们不会与任何第三方共享您的个人信息。本 App 仅使用以下服务商：</p>
-  <ul>
-    <li><strong>Supabase：</strong>云数据库服务，用于存储已登录用户的学习数据和账号信息。</li>
-    <li><strong>Apple：</strong>处理付款交易，我们不会收到您的付款信息。</li>
-  </ul>
-  <p class="highlight">除此之外，本 App 没有接入任何第三方统计、广告或分析 SDK。</p>
-</div>
+  <div class="card">
+    <h2><span class="num">4</span>数据的存储与传输</h2>
+    <p>根据您的使用方式，数据存储方式不同：</p>
+    <ul>
+      <li><strong>未登录 / 仅本地使用</strong>：所有数据存储在设备本地，不上传任何服务器</li>
+      <li><strong>已登录（云端同步开启）</strong>：学习数据会同步到 Supabase（美国节点），用于多设备恢复</li>
+    </ul>
+    <div class="divider"></div>
+    <p><strong>数据保留期限：</strong></p>
+    <ul>
+      <li>本地数据：保留至您卸载 App 或主动删除</li>
+      <li>云端数据：保留至您注销账号，注销后立即删除</li>
+    </ul>
+  </div>
 
-<div class="card">
-  <h2>5. 儿童隐私</h2>
-  <p>每个词库的前 100 词完全免费，无需登录即可使用，13 岁以下用户不会因使用该功能而被要求提供个人信息。</p>
-  <p>Pro 功能的注册与付费面向 14 岁及以上用户。如您是监护人，发现未成年人在未经过您同意的情况下注册了账号，请联系我们删除。</p>
-</div>
+  <div class="card">
+    <h2><span class="num">5</span>信息共享</h2>
+    <p>本App接入以下服务商用于提供基础功能：</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>第三方名称</th><th>共享数据类型</th><th>共享目的</th><th>位置</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Supabase</td><td>学习进度、账号标识</td><td>云端数据同步</td><td>美国</td></tr>
+          <tr><td>Apple</td><td>Apple ID 标识符</td><td>身份认证</td><td>美国</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>除此之外，本App没有接入任何第三方统计、广告或分析 SDK。</p>
+  </div>
 
-<div class="card">
-  <h2>6. 您的权利</h2>
-  <ul>
-    <li>在 App 内「设置 → 本地备份」中导出您的全部数据</li>
-    <li>在「设置 → 账号」中退出登录或注销账号</li>
-    <li>注销账号后，云端数据将永久删除</li>
-    <li>在「设置 → 数据管理 → 一键归零」中清除所有本地学习数据</li>
-    <li>卸载 App 以清除所有本地数据</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">6</span>儿童隐私保护</h2>
+    <div class="highlight-green">
+      <strong>儿童隐私专项声明：</strong>使用 LeapWord 需要 Apple ID 登录。13 岁以下用户应由监护人协助完成登录。我们不主动收集儿童个人信息。
+    </div>
+    <p>如您是监护人，发现未成年人在未经过您同意的情况下使用了本应用，请联系我们删除数据。</p>
+  </div>
 
-<div class="card">
-  <h2>7. 数据删除</h2>
-  <ul>
-    <li><strong>本地数据：</strong>在 App 设置中「一键归零」或卸载 App 即可清除</li>
-    <li><strong>云端数据：</strong>在 App 设置中「注销账号」可删除云端数据</li>
-    <li><strong>备份文件：</strong>手动导出的备份需要您在「文件」App 中自行删除</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">7</span>您的权利</h2>
+    <p>根据《个人信息保护法》，您享有以下权利：</p>
+    <ul>
+      <li>🔹 <strong>查阅权</strong>：在 App 内查看学习记录</li>
+      <li>🔹 <strong>删除权</strong>：本地数据可"一键归零"，云端数据可注销账号删除</li>
+      <li>🔹 <strong>撤回同意</strong>：退出登录或卸载 App</li>
+      <li>🔹 <strong>注销账号</strong>：在设置页操作，云端数据立即删除</li>
+    </ul>
+  </div>
 
-<div class="card">
-  <h2>8. 联系我们</h2>
-  <p>如您对本隐私政策有任何疑问，欢迎通过以下方式联系我们：</p>
-  <ul>
-    <li>邮箱：515621051@qq.com</li>
-    <li>App 内：设置 → 关于 → 联系反馈</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2><span class="num">8</span>联系我们</h2>
+    <p>如有任何隐私相关疑问：</p>
+    <ul>
+      <li>📧 <strong>邮箱</strong>：515621051@qq.com</li>
+      <li>📱 <strong>App内</strong>：设置 → 关于 → 联系反馈</li>
+    </ul>
+    <p>我们将在 <strong>15个工作日</strong> 内答复。</p>
+  </div>
 
-<div class="footer">
-  <p>LeapWord · 隐私政策 · 2026</p>
-</div>
+  <div class="footer">
+    <p>LeapWord · 隐私政策 · 2026</p>
+  </div>
 
 </div>
 </body>
